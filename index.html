@@ -1,69 +1,260 @@
-<!-- Services Section -->
-<section id="services" class="py-5 bg-light">
-    <div class="container text-center">
-        <h2 class="fw-bold mb-5">Our Services</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BSR Online Services | Sandeep GC</title>
 
-        <div class="row g-4">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-            <!-- Networking -->
-            <div class="col-md-4">
-                <div class="service-box">
-                    <i class="fas fa-network-wired fa-3x mb-3 text-primary"></i>
-                    <h5>Networking Setup</h5>
-                    <p>LAN setup, Router configuration, Office & Home network installation.</p>
-                </div>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    padding:100px 0;
+    text-align:center;
+}
+
+header img{
+    width:150px;
+    border-radius:50%;
+    margin-bottom:20px;
+    border:4px solid #fff;
+}
+
+header h1{
+    font-size:40px;
+    font-weight:700;
+}
+
+header p{
+    opacity:0.9;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#00c6ff;
+    color:#000;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#fff;
+    transform:scale(1.05);
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    background:#111827;
+    padding:15px 0;
+    z-index:1000;
+}
+
+nav .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00c6ff;
+}
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:32px;
+    font-weight:700;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.4s;
+    border:1px solid transparent;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border:1px solid #00c6ff;
+}
+
+.card i{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#00c6ff;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px 0;
+    font-size:14px;
+    opacity:0.8;
+}
+
+.social{
+    margin-top:20px;
+}
+
+.social a{
+    color:#fff;
+    margin:0 10px;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.social a:hover{
+    color:#00c6ff;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:28px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <h2>BSR Online Services</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header>
+    <div class="container">
+        <img src="Sandeep.png" alt="Sandeep GC">
+        <h1>Sandeep GC</h1>
+        <p>IT Expert | CCTV & Networking Specialist</p>
+        <p>Hamro Bhusewa Kendra & All Online Services Provider</p>
+        <a href="#contact" class="btn">Contact Now</a>
+
+        <div class="social">
+            <a href="https://www.youtube.com/c/SandeepGCOfficial"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/Sandeepgcofficial/"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/computersandeep"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</header>
+
+<section id="services">
+    <div class="container">
+        <h2 class="section-title">Our Professional Services</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Networking Setup</h3>
+                <p>LAN installation, router configuration, office & home networking solutions.</p>
             </div>
 
-            <!-- CCTV -->
-            <div class="col-md-4">
-                <div class="service-box">
-                    <i class="fas fa-video fa-3x mb-3 text-danger"></i>
-                    <h5>CCTV Installation</h5>
-                    <p>Professional CCTV installation, DVR/NVR setup & remote mobile monitoring.</p>
-                </div>
+            <div class="card">
+                <i class="fas fa-video"></i>
+                <h3>CCTV Installation</h3>
+                <p>Professional CCTV setup with DVR/NVR configuration & remote monitoring.</p>
             </div>
 
-            <!-- Computer Repair -->
-            <div class="col-md-4">
-                <div class="service-box">
-                    <i class="fas fa-laptop fa-3x mb-3 text-success"></i>
-                    <h5>Computer Repair</h5>
-                    <p>Windows installation, virus removal, hardware upgrade & troubleshooting.</p>
-                </div>
+            <div class="card">
+                <i class="fas fa-laptop"></i>
+                <h3>Computer Repair</h3>
+                <p>Windows installation, virus removal, system troubleshooting & upgrades.</p>
             </div>
 
-            <!-- Hamro Bhusewa Kendra -->
-            <div class="col-md-6">
-                <div class="service-box">
-                    <i class="fas fa-landmark fa-3x mb-3 text-warning"></i>
-                    <h5>Hamro Bhusewa Kendra</h5>
-                    <p>
-                        Complete Land & Government Service Support including:
-                        <br>✔ Malpot related works
-                        <br>✔ Napi related works
-                        <br>✔ Land tax & ownership documents
-                        <br>✔ Online land verification services
-                    </p>
-                </div>
+            <div class="card">
+                <i class="fas fa-landmark"></i>
+                <h3>Hamro Bhusewa Kendra</h3>
+                <p>Malpot works, Napi works, land verification, tax services & document support.</p>
             </div>
 
-            <!-- Online Services -->
-            <div class="col-md-6">
-                <div class="service-box">
-                    <i class="fas fa-globe fa-3x mb-3 text-info"></i>
-                    <h5>All Online Services</h5>
-                    <p>
-                        We provide all kinds of digital and online services:
-                        <br>✔ PAN Registration
-                        <br>✔ Company Registration Support
-                        <br>✔ Passport Form Fill-up
-                        <br>✔ Driving License Form
-                        <br>✔ Government Online Applications
-                    </p>
-                </div>
+            <div class="card">
+                <i class="fas fa-globe"></i>
+                <h3>All Online Services</h3>
+                <p>PAN registration, passport forms, driving license, government applications & more.</p>
             </div>
 
         </div>
     </div>
 </section>
 
+<section id="contact">
+    <div class="container" style="text-align:center;">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Email: yourmail@example.com</p>
+        <p>Location: Kawasoti, Nepal</p>
+        <a href="#" class="btn">Message Now</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 BSR Online Services | Sandeep GC | All Rights Reserved
+</footer>
+
+</body>
+</html>
